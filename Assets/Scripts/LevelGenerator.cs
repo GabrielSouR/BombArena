@@ -14,7 +14,7 @@ public class LevelGenerator : MonoBehaviour
     [Header("Tilemaps")]
     public Tilemap background;    // chão
     public Tilemap foreground;    // paredes + pilares
-    public Tilemap destructible;  // blocos destruíveis (brick)
+    public Tilemap destructible;  // blocos destruíveis 
 
     [Header("Tiles")]
     public TileBase groundTile;
@@ -73,7 +73,6 @@ public class LevelGenerator : MonoBehaviour
             foreground.SetTile(new Vector3Int(innerWidth, y, 0), wallTile);
         }
 
-        // 3) Pilares (xadrez: 1,3,5,...) respeitando safePillars
         for (int y = 1; y <= innerHeight - 2; y += 2)
         {
             for (int x = 1; x <= innerWidth - 2; x += 2)
@@ -116,7 +115,6 @@ public class LevelGenerator : MonoBehaviour
             }
         }
 
-        // Embaralhar (Fisher-Yates)
         System.Random rng = (randomSeed == 0) ? new System.Random() : new System.Random(randomSeed);
         for (int i = candidates.Count - 1; i > 0; i--)
         {
@@ -137,16 +135,6 @@ public class LevelGenerator : MonoBehaviour
 
         // bottom-left
         for (int y = 0; y <= r; y++)
-            for (int x = 0; x <= r; x++)
-                safe.Add(new Vector3Int(x, y, 0));
-
-        // bottom-right
-        for (int y = 0; y <= r; y++)
-            for (int x = innerWidth - 1 - r; x <= innerWidth - 1; x++)
-                safe.Add(new Vector3Int(x, y, 0));
-
-        // top-left
-        for (int y = innerHeight - 1 - r; y <= innerHeight - 1; y++)
             for (int x = 0; x <= r; x++)
                 safe.Add(new Vector3Int(x, y, 0));
 

@@ -135,8 +135,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -157,8 +157,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,8 +179,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,8 +201,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,8 +223,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,8 +245,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,6 +255,50 @@ TextureImporter:
       bones: []
       spriteID: 54a834fb8a59af720800000000000000
       internalID: 2880779463652772421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWhiteDeath_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 60
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28e5ae66d124e7498be49da1f3036d9
+      internalID: 1659859625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWhiteDeath_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ac244ca4f5d9a40a69f28c77517368
+      internalID: -611290516
       vertices: []
       indices: 
       edges: []
@@ -279,6 +323,8 @@ TextureImporter:
       PlayerWhiteDeath_3: 8242516718634736881
       PlayerWhiteDeath_4: 7147424838813738485
       PlayerWhiteDeath_5: 2880779463652772421
+      PlayerWhiteDeath_6: 1659859625
+      PlayerWhiteDeath_7: -611290516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,21 +11,20 @@ public class TopDownMover : MonoBehaviour
 
     [Header("Movimento")]
     public float moveSpeed = 5f;
-    public bool fourDirectionsOnly = true;   // sem diagonal, estilo Bomberman
-    public float deadZone = 0.1f;            // evita “rabeada” quando solta tecla
+    public bool fourDirectionsOnly = true;   
+    public float deadZone = 0.1f;            
 
     [Header("Animator (filho Visual)")]
-    public Animator animator;                // arraste o Animator do filho Visual
-
+    public Animator animator;                
     private Rigidbody2D rb;
-    private Vector2 input;                   // direção atual
-    private Vector2 lastDir = Vector2.down;  // última direção válida
+    private Vector2 input;                   
+    private Vector2 lastDir = Vector2.down;  
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         if (!animator) animator = GetComponentInChildren<Animator>();
-        // RB2D recomendado
+
         rb.gravityScale = 0f;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
@@ -61,7 +60,7 @@ public class TopDownMover : MonoBehaviour
         // — alimenta o Animator —
         if (animator)
         {
-            Vector2 animDir = isMoving ? input : lastDir; // Idle olha para a última
+            Vector2 animDir = isMoving ? input : lastDir; 
             animator.SetBool("IsMoving", isMoving);
             animator.SetFloat("MoveX", animDir.x);
             animator.SetFloat("MoveY", animDir.y);

@@ -26,10 +26,9 @@ public class SpriteYOffset : MonoBehaviour
 
     private void Apply()
     {
-        // Garante que só mova o filho 'Visual' no modo Play ou Editor ativo
         if (Application.isPlaying)
             transform.localPosition = new Vector3(0f, yOffset, 0f);
         else
-            transform.localPosition = originalPosition; // mantém original no modo de edição
+            transform.localPosition = originalPosition; 
     }
 }
